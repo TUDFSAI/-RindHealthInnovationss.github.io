@@ -1102,7 +1102,12 @@ figure:hover+span {
  }
 /* end--about.html--“Meet the Team”下面的所有字体的style */
 
-
+/* start (CEO/Head of Tech) 居中*/
+.centered-text {
+    text-align: center;
+  }
+  
+/* end (CEO/Head of Tech) 居中*/
 
 
 

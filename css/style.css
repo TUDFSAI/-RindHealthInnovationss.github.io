@@ -1111,7 +1111,7 @@ figure:hover+span {
 <div class="whitespace"></div>//就是作用在这行coding的,使“About Us”和“Meet the Team”之间有一些间隙!
 <!-- Advanced Meet the team section start -->*/
  .whitespace {
-    height: 650px; /* Adjust this value to increase or decrease the whitespace */
+    height: 750px; /* Adjust this value to increase or decrease the whitespace */
 }
 /* end--about page:  */
 

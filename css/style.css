@@ -1038,58 +1038,78 @@ figure:hover+span {
 
 
 /* start--project--40 foods and search bar */
-body {
+  /* General styles */
+  body {
     font-family: Arial, sans-serif;
   }
   
+  /* start--让search bar居中 */
   .container {
-    width: 80%;
+    max-width: 960px;
     margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  
+  /* end--让search bar居中 */
+
   .big-frame {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
   }
   
   .small-frame {
-    width: calc(33.33% - 20px);
     display: flex;
-    border: 1px solid #ccc;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 5px;
     padding: 10px;
-    box-sizing: border-box;
-    cursor: pointer;
-  }
-  
-  .small-frame img {
-    width: 50%;
-    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
   }
   
   .food-info {
-    width: 50%;
-    padding-left: 10px;
+    margin-top: 10px;
   }
   
-  .limited-info {
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  
-  .full-info {
-    display: none;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
+  /* Search bar styles */
   #searchBar {
+    display: block;
     width: 100%;
-    padding: 10px;
+    max-width: 500px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
     margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  #searchBar:focus {
+    border-color: #0077cc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 119, 204, 0.6);
+  }
+  
+  /* Placeholder styles */
+  #searchBar::placeholder {
+    color: #999;
+    font-style: italic;
   }
   /* end--project--40 foods and search bar */
+
+/* start--food image size */
+.food-image {
+    width: 150px; /* Change this value to set a different width */
+    height: 150px; /* Change this value to set a different height */
+    object-fit: cover; /* This property makes sure the images maintain their aspect ratio */
+    border-radius: 5px; /* Optional: Add a border radius for rounded corners */
+  }  
+/* end--food image size */

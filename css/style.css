@@ -638,7 +638,7 @@ figure:hover+span {
 
 
 
-/* fsai section start */
+/* fsai.html section start */
 
 .fsai_section {
     width: 100%;
@@ -720,7 +720,7 @@ figure:hover+span {
 }
 
 
-/* fsai section end */
+/* fsai.html section end */
 
 
 
@@ -1271,3 +1271,79 @@ figure:hover+span {
     gap: 10px;
   }
 /* end-- project页面,右下角"Back to Search"的功能的小框架style*/
+
+
+
+/*start-- 这个是Project.html/Chapter Navigation/Biscuits(或者其他食物).那四个sections的style,就是sugar,slat,fat,calries. */
+    .page-content {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h2 {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .chapter {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: all 0.3s;
+    }
+
+    .section:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+
+    .section:nth-child(even) {
+        background-color: #e0e0e0;
+    }
+
+    .section-image {
+        max-width: 150px;
+        max-height: 150px;
+        margin-right: 20px;
+        opacity: 0.6;
+        transition: all 0.3s;
+    }
+
+    .section-text {
+        flex-grow: 1;
+        transition: all 0.3s;
+    }
+
+    .section:hover {
+        background-color: #c8c8c8;
+    }
+
+    .section:hover .section-text {
+        color: #333;
+    }
+
+    .section:hover .section-image {
+        opacity: 1;
+    }
+/*end-- 这个是Project.html/Chapter Navigation/Biscuits(或者其他食物).那四个sections的style,就是sugar,slat,fat,calries. */    

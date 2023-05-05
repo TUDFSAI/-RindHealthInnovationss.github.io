@@ -73,6 +73,7 @@
             display: block;
          }
 
+         
          .dropbtn {
             background-color: #4CAF50;
             color: white;
@@ -80,6 +81,12 @@
             font-size: 16px;
             border: none;
             cursor: pointer;
+            /* start--这是后价的,复制于“.chapter”function,因为原来的,四个角没有过度,而且还没有阴影,所以一粘贴,就OK啦!我太聪明啦!! */
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            /* end--这是后价的,复制于“.chapter”function,因为原来的,四个角没有过度,而且还没有阴影,所以一粘贴,就OK啦!我太聪明啦!! */ 
          }
 
          .dropbtn:hover, .dropbtn:focus {
@@ -147,24 +154,40 @@
       <!--start--返回到id=“ch”地方的style-->
       <style>
          .back-to-top {
-         position: fixed;
-         bottom: 20px;
-         right: 20px;
-         background-color: #4CAF50;
-         border: none;
-         color: white;
-         text-align: center;
-         display: inline-block;
-         font-size: 16px;
-         padding: 10px 20px;
-         border-radius: 5px;
-         cursor: pointer;
-         z-index: 1000;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
          }
       </style>
       <!--end--返回到id=“ch”地方的style-->
 
-      <!--start--link from style.css for size of pictures from Chapter 1 to 9.-->
+      <!-- start--这个是back to search 的style -->
+      <style>
+         .back-to-search {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+         }
+      </style>
+      <!-- end--这个是back to search 的style -->
+
+
+
+      <!--start--滚动那个,一次显示三个那个功能: link from style.css for size of pictures from Chapter 1 to 9.-->
       <link rel="stylesheet" href="styles.css" />
       <!--end--link from style.css for size of pictures from Chapter 1 to 9.-->
    </head>
@@ -231,6 +254,276 @@
           <p class="limited-info">Cupcakes</p>
         </div>
       </a>
+
+      <a href="#C3" class="small-frame" id="food3">
+         <img src="images/food3.png" alt="Food 3" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+      
+      <a href="#C4" class="small-frame" id="food4">
+         <img src="images/food4.png" alt="Food 4" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+      
+      <a href="#C5" class="small-frame" id="food5">
+         <img src="images/food5.png" alt="Food 5" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+      
+      <a href="#C6" class="small-frame" id="food6">
+         <img src="images/food6.png" alt="Food 6" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+      
+      <a href="#C7" class="small-frame" id="food7">
+         <img src="images/food7.png" alt="Food 7" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+      
+      <a href="#C8" class="small-frame" id="food8">
+         <img src="images/food8.png" alt="Food 8" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+      
+      <a href="#C9" class="small-frame" id="food9">
+         <img src="images/food9.png" alt="Food 9" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+      
+      <a href="#C10" class="small-frame" id="food10">
+         <img src="images/food10.png" alt="Food 10" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+      
+      <a href="#C11" class="small-frame" id="food11">
+         <img src="images/food11.png" alt="Food 11" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a> 
+      
+      <a href="#C12" class="small-frame" id="food12">
+         <img src="images/food12.png" alt="Food 12" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+      
+      <a href="#C13" class="small-frame" id="food13">
+         <img src="images/food13.png" alt="Food 13" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>  
+      
+      <a href="#C15" class="small-frame" id="food15">
+         <img src="images/food15.png" alt="Food 15" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C16" class="small-frame" id="food16">
+         <img src="images/food16.png" alt="Food 16" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+      
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+      <a href="#C14" class="small-frame" id="food14">
+         <img src="images/food14.png" alt="Food 14" class="food-image">
+         <div class="food-info">
+          <p class="limited-info">Cupcakes</p>
+        </div>
+      </a>
+
+
+
+      
 
 
 
@@ -408,33 +701,68 @@
       <!--end--要是没有这个点“.”,这个网页就tm不好使,真tm见了鬼了!!!-->
 
       <!-- START:  content section -->
-      <div class="content-section">
+      <div class="content-section"><!-- 这个不能注释掉,因为下面那个“Back to Food Navigation”的功能是根据“content-section”来寻找和发挥作用的!!! -->
+         <div class="page-content">
+         <div class="chapter">
          <h2 id=“Ch”>Chapter Navigation</h2>
-      <div class="dropdown">
+         
+      <!-- <div class="dropdown"> -->
       
-      <!--start--这行code就是那个返回到“Ch”的code-->
-      <button class="back-to-top" onclick="document.querySelector('.content-section').scrollIntoView();">Back to Chapter Navigation</button>
-      <!--end--这行code就是那个返回到“Ch”的code-->
+      <!--start--这行code就是那个返回到“Ch”的code--back to ch的按钮+背景灰色的小框架-->
+      <div class="button-wrapper"><!-- 这行call的class找style.css里面:关键词“project页面,右下角"Back to Food Navogation"的功能的小框架style” -->
+         <button class="back-to-top" onclick="document.querySelector('.content-section').scrollIntoView();">Back to Food Navigation</button>
+      </div>
+      <!--end--这行code就是那个返回到“Ch”的code--back to ch的按钮+背景灰色的小框架-->
 
+      <!--start--back to search的按钮+背景灰色的小框架-->
+      <div class="button-wrapper2"><!-- 这行call的class找style.css里面:关键词“project页面,右下角"Back to Search"的功能的小框架style” -->
+         <button class="back-to-search" onclick="document.querySelector('#searchBar').scrollIntoView({ behavior: 'smooth' });">Back to Search</button>
+      </div>
+      <!--end--back to search的按钮+背景灰色的小框架-->
 
+      <!-- start--第一个jump function -->
       <div class="dropdown">
-         <button class="dropbtn">Jump to Foods</button>
-
-            <div class="dropdown-content">
-               <a href="#C1">Food 1: Biscuits</a>
-               <a href="#C2">Food 2: Cupcakes</a>
-               <a href="#C3">Food 3</a>
-               <a href="#C4">Food 4</a>
-               <a href="#C5">Food 5</a>
-               <a href="#C6">Food 6</a>
-               <a href="#C7">Food 7</a>
-               <a href="#C8">Food 8</a>
-               <a href="#C9">Food 9</a>
+         
+            <div class="page-content">
+            
                
+               <button class="dropbtn">Jump to Foods</button>
+               
+               <div class="dropdown-content">
+                  <a href="#C1">Food 1: Biscuits</a>
+                  <a href="#C2">Food 2: Cupcakes</a>
+                  <a href="#C3">Food 3</a>
+                  <a href="#C4">Food 4</a>
+                  <a href="#C5">Food 5</a>
+                  <a href="#C6">Food 6</a>
+                  <a href="#C7">Food 7</a>
+                  <a href="#C8">Food 8</a>
+                  <a href="#C9">Food 9</a>
+               </div>
             </div>
       </div>
-
+      <!-- end--第一个jump function -->
+      
+      <!-- start--第二个,右下角的jump function -->
+      <div class="jump-to-foods-frame">
+         <div class="dropdown">
+            <button class="dropbtn">Jump to Foods</button>
+               <div class="dropdown-content">
+                  <a href="#C1">Food 1: Biscuits</a>
+                  <a href="#C2">Food 2: Cupcakes</a>
+                  <a href="#C3">Food 3</a>
+                  <a href="#C4">Food 4</a>
+                  <a href="#C5">Food 5</a>
+                  <a href="#C6">Food 6</a>
+                  <a href="#C7">Food 7</a>
+                  <a href="#C8">Food 8</a>
+                  <a href="#C9">Food 9</a>
+                  <!-- Add more food links here -->
+               </div>
+            </div>
       </div>
+      <!-- end--第二个,右下角的jump function -->
+
       
       <!--start--这个部分就是控制chapters部分格式的,上面有它的style.-->
       <div class="page-content">
@@ -484,6 +812,8 @@
          </div>
       </div>
       <!--end--这个部分就是控制chapters部分格式的,上面有它的style.-->
+</div>
+</div>
 
 
 
@@ -550,6 +880,7 @@
       </div>
       //end,fsai计算器---去掉这个coding,就居中啦!!!哈哈哈哈哈哈!--</div>//-->
       
+      
 
       <!--start--FSAI的计算器-->
       <div class="courses_section layout_padding">
@@ -581,7 +912,7 @@
                <!---->
                <div class="col-lg-3 col-sm-6">
                   <h3 class="useful_text">About</h3>
-                  <p class="footer_text">We are rind health innovations********多少发多少发多少发的发多少粉丝地方的沙阿斯发多少发多少. </p>
+                  <p class="footer_text">We are rind health innovations*................</p>
                </div>
                <!---->
 

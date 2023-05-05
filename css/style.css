@@ -1045,7 +1045,7 @@ figure:hover+span {
   
   /* start--让search bar居中 */
   .container {
-    max-width: 960px;
+    max-width: 1200px;/* big-frame的宽度,我调整到让它,可以,一行装6个食物,之前是4个,那样行太多了!,现在好多了! */
     margin: 0 auto;
     padding: 20px;
     display: flex;
@@ -1113,3 +1113,67 @@ figure:hover+span {
     border-radius: 5px; /* Optional: Add a border radius for rounded corners */
   }  
 /* end--food image size */
+
+
+/* start--这是新的(右下角)jump to foods function,是在project页面的,右下角的,jump function */
+.jump-to-foods-frame {
+    position: fixed;
+    bottom: 180px;/* 调整灰色小框架的位置,避免覆盖 */
+    right: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    max-height: calc(10 * 36px);
+    overflow-y: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 5px;
+  }
+  /* end--这是新的jump function,是在project页面的,右下角的,jump function */
+
+/* start-- project页面,右下角"Back to Food Navogation"的功能的小框架style */
+  .button-wrapper {
+    position: fixed;
+    bottom: 20px;/* 调整灰色小框架的位置,避免覆盖 */
+    right: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+/* end-- project页面,右下角"Back to Food Navogation"的功能的小框架style*/
+
+/* start-- project页面,右下角"Back to Search"的功能的小框架style */
+  .button-wrapper2 {
+    position: fixed;
+    bottom: 100px;/* 调整灰色小框架的位置,避免覆盖 */
+    right: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+/* end-- project页面,右下角"Back to Search"的功能的小框架style*/

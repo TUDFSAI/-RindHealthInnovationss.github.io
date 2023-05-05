@@ -634,6 +634,100 @@ figure:hover+span {
 /* blog section end */
 
 
+
+
+
+
+/* fsai section start */
+
+.fsai_section {
+    width: 100%;
+    float: left;
+    background-image: url(../images/background_food.avif);
+    height: auto;
+    padding: 100px 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.fsai_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #252525;
+    text-align: center;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.fsai_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #252525;
+    text-align: center;
+    margin: 0px;
+}
+
+.fsai_section_2 {
+    width: 100%;
+    float: left;
+}
+
+.fsai_taital_1 {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #252525;
+    font-weight: 600;
+}
+
+.ipsum_text2 {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #252525;
+    padding-top: 44px;
+    margin: 0px;
+}
+
+.readmore_bt2 {
+    width: 170px;
+    float: left;
+    padding-top: 55px;
+}
+
+.readmore_bt2 a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    background-color: #fb6818;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.readmore_bt2 a:hover {
+    color: #fafafa;
+    background-color: #252525;
+}
+
+.fsai_img {
+    width: 100%;
+    float: left;
+}
+
+
+/* fsai section end */
+
+
+
+
+
+
+
 /* contact section start */
 
 .contact_section {

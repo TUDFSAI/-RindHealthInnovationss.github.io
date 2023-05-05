@@ -365,7 +365,12 @@
          </div>
       </div>
       <!-- courses section end.-->
-
+      <div class="row">
+               <div class="col-sm-12">
+                  <h1 id='searchbar'class="courses_taital">Food Search Bar</h1>
+                  <p class="courses_text">.............</p>
+               </div>
+            </div>
 
 <!-- 让我取消了//back不工作的话,直接设置link,让back是刷新页面,这样就会重新出现所有的食物啦,我真是个小聪明!! -->
 <!-- start--search bar and 40 foods-->
@@ -714,7 +719,8 @@
 
       <!--start--back to search的按钮+背景灰色的小框架-->
       <div class="button-wrapper2"><!-- 这行call的class找style.css里面:关键词“project页面,右下角"Back to Search"的功能的小框架style” -->
-         <button class="back-to-search" onclick="document.querySelector('#searchBar').scrollIntoView({ behavior: 'smooth' });">Back to Food Search Bar</button>
+         <button class="back-to-search" onclick="document.querySelector('#searchbar').scrollIntoView({ behavior: 'smooth' });">Back to Food Search Bar</button>
+         <!-- --------------------------------------------------原来是--('#searchBar')--是直接到search bar,也没有个title,太丑了,所以我加了个title“Food Search Bar”, ID就是“searchbar”-->
       </div>
       <!--end--back to search的按钮+背景灰色的小框架-->
 

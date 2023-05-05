@@ -222,7 +222,7 @@ button {
 }
 
 .header_bg {
-    background: #fff200;
+    background: #c6cf19;
     border-bottom: 1px solid #ffffff;
 }
 
@@ -916,3 +916,180 @@ figure:hover+span {
              height: 400px; /* set the desired height */
           }
 /*end---"Project和“”Home"中图片sieze的style!!*/
+
+
+
+
+/* start--about.html--“Meet the Team”下面的所有字体的style */
+.team_title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+ .team_title::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #007bff;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+ }
+
+ .team_title::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background-color: #007bff;
+    bottom: -14px;
+    left: 25%;
+    z-index: -1;
+ }
+
+ .team_section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+ .team_member {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+ }
+
+ .team_member img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+ }
+
+ .team_member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+ }
+
+ .team_member p {
+    font-size: 18px;
+    margin-bottom: 20px;
+ }
+
+ .social-links {
+    display: flex;
+    justify-content: center;
+ }
+
+ .social-links a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: 0.3s;
+ }
+
+ .social-links a:hover {
+    color: #007bff;
+ }
+
+ .team_frame2 {
+    display: inline-block;
+    border: 2px solid red;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: white;
+ }
+/* end--about.html--“Meet the Team”下面的所有字体的style */
+
+
+
+
+
+/* start--about page: 
+<!-- about section end -->
+<div class="whitespace"></div>//就是作用在这行coding的,使“About Us”和“Meet the Team”之间有一些间隙!
+<!-- Advanced Meet the team section start -->*/
+ .whitespace {
+    height: 650px; /* Adjust this value to increase or decrease the whitespace */
+}
+/* end--about page:  */
+
+/* start-about.html 下面同理,在统一界面,给不同function之间加入一些space */
+
+.whitespace2 {
+    height: 100px; /* Adjust this value to increase or decrease the whitespace */
+}
+
+.whitespace3 {
+    height: 100px; /* Adjust this value to increase or decrease the whitespace */
+}
+
+.whitespace4 {
+    height: 100px; /* Adjust this value to increase or decrease the whitespace */
+}
+/* end-about.html 下面同理,在统一界面,给不同function之间加入一些space */
+
+
+/* start--project--40 foods and search bar */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .big-frame {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .small-frame {
+    width: calc(33.33% - 20px);
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .small-frame img {
+    width: 50%;
+    object-fit: cover;
+  }
+  
+  .food-info {
+    width: 50%;
+    padding-left: 10px;
+  }
+  
+  .limited-info {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .full-info {
+    display: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #searchBar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  /* end--project--40 foods and search bar */

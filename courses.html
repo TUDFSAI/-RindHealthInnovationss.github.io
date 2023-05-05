@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <!-- 设置网页的logo 我特意用photoshop剪切了一个!!!哈哈哈!
+      其实就是把下面的文字去掉,这是5月4日在和FSAImeeting学到的,
+      FSAI有两个logo,一个大的,一个小的,小的类似我这种,可以放在网页和app里的!!!-->
+      <link rel="shortcut icon" href="images/website_logo.png">
+
+      
+
       <!-- basic -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +15,12 @@
       <!-- mobile metas -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+      <!-- start--40 foods and search bar -->
+      <link rel="stylesheet" href="styles.css">
+      <!-- end--40 foods and search bar -->
+
+
       <!-- site metas -->
       <title>Project</title>
       <meta name="keywords" content="">
@@ -156,6 +169,13 @@
       <!--end--link from style.css for size of pictures from Chapter 1 to 9.-->
    </head>
    <body>
+
+   
+   
+  
+  
+  
+
       <div class="header_section header_bg">
          <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -191,6 +211,57 @@
       </div>
       <!-- header section end -->
 
+
+<!-- 让我取消了//back不工作的话,直接设置link,让back是刷新页面,这样就会重新出现所有的食物啦,我真是个小聪明!! -->
+<!-- start--search bar and 40 foods-->
+<div class="container">
+    <input type="text" id="searchBar" placeholder="Search food...">
+    <div class="big-frame">
+
+      <a href="#C1" class="small-frame" id="food1">
+        <img src="images/food1.png" alt="Food 1">
+        <div class="food-info">
+          <p class="limited-info">Food 1 </p>
+        </div>
+      </a>
+
+      <a href="#C2" class="small-frame" id="food2">
+        <img src="images/food2.png" alt="Food 2">
+        <div class="food-info">
+          <p class="limited-info">Food 2 </p>
+        </div>
+      </a>
+
+
+
+
+
+      
+      
+
+
+      
+      <!-- start--让我取消了 之前的功能太难了,做不到.-->
+      <!-- 想要添加食物,就复制下面的coding.开启和关闭:注释快捷键”shift+Alt+A“ -->
+      <!-- <div class="small-frame" id="food1" onclick="enlarge('food1')">
+        <img src="images/food1.png" alt="Food 1">
+        <div class="food-info">
+          <p class="limited-info">Food 1 limited info...</p>
+          <p class="full-info hidden">Full information about Food 1...</p>
+        </div>
+      </div> -->
+      <!-- end--让我取消了 之前的功能太难了,做不到.-->
+
+
+
+
+
+    </div>
+</div>
+<!-- end--search bar and 40 foods-->
+
+
+
       <!-- courses section start -->
       <div class="courses_section layout_padding">
          <div class="container">
@@ -214,7 +285,7 @@
                               <!--<h3 class="introduction_text">Introduction to CSS</h3>-->
 
                               <!--start--这个是我在文本“Part 1”中,添加了一个link,去向是“C1”-->
-                              <h3 class="introduction_text"><a href="#C1">Chapter 1</a></h3>
+                              <h3 class="introduction_text"><a href="#C1">Food 1/ 4 Targets</a></h3>
                               <p class="lorem_text">We are Rind Health Innovations</p>
                               <!--end--这个是我在文本“Part 1”中,添加了一个link,去向是“C1”-->
 
@@ -226,7 +297,7 @@
                               <div class="hover01 column">
                                  <figure><img src="images/img-2.png" class="my-image2"></figure>
                               </div>
-                              <h3 class="introduction_text"><a href="#C2">Chapter 2</a></h3>
+                              <h3 class="introduction_text"><a href="#C2">Food 2</a></h3>
                               <p class="lorem_text">We are Rind Health Innovations</p>
                            </div>
                            <!--end--在style里面又个叫“my-image2”的style,来控制image 2的size-->
@@ -236,7 +307,7 @@
                               <div class="hover01 column">
                                  <figure><img src="images/img-3.png" class="my-image3"></figure>
                               </div>
-                              <h3 class="introduction_text"><a href="#C3">Chapter 3</a></h3>
+                              <h3 class="introduction_text"><a href="#C3">Food 3</a></h3>
                               <p class="lorem_text">We are Rind Health Innovations</p>
                            </div>
                            <!--end--在style里面又个叫“my-image3”的style,来控制image 3的size-->
@@ -252,7 +323,7 @@
                               <div class="hover01 column">
                                  <figure><img src="images/img-4.png" class="my-image4"></figure>
                               </div>
-                              <h3 class="introduction_text"><a href="#C4">Chapter 4</a></h3>
+                              <h3 class="introduction_text"><a href="#C4">Food 4</a></h3>
                               <p class="lorem_text">We are Rind Health Innovations</p>
                            </div>
                            <!--end--在style里面又个叫“my-image4”的style,来控制image 4的size-->
@@ -262,7 +333,7 @@
                               <div class="hover01 column">
                                  <figure><img src="images/img-5.png" class="my-image5"></figure>
                               </div>
-                              <h3 class="introduction_text"><a href="#C5">Chapter 5</a></h3>
+                              <h3 class="introduction_text"><a href="#C5">Food 5</a></h3>
                               <p class="lorem_text">We are Rind Health Innovations</p>
                            </div>
                            <!--end--在style里面又个叫“my-image5”的style,来控制image 5的size-->
@@ -272,7 +343,7 @@
                               <div class="hover01 column">
                                  <figure><img src="images/img-6.png" class="my-image6"></figure>
                               </div>
-                              <h3 class="introduction_text"><a href="#C6">Chapter 6</a></h3>
+                              <h3 class="introduction_text"><a href="#C6">Food 6</a></h3>
                               <p class="lorem_text">We are Rind Health Innovations</p>
                            </div>
                            <!--end--在style里面又个叫“my-image6”的style,来控制image 6的size-->
@@ -288,7 +359,7 @@
                               <div class="hover01 column">
                                  <figure><img src="images/img-7.png" class="my-image7"></figure>
                               </div>
-                              <h3 class="introduction_text"><a href="#C7">Chapter 7</a></h3>
+                              <h3 class="introduction_text"><a href="#C7">Food 7</a></h3>
                               <p class="lorem_text">We are Rind Health Innovations</p>
                            </div>
                            <!--end--在style里面又个叫“my-image7”的style,来控制image 7的size-->
@@ -298,7 +369,7 @@
                               <div class="hover01 column">
                                  <figure><img src="images/img-8.png" class="my-image8"></figure>
                               </div>
-                              <h3 class="introduction_text"><a href="#C8">Chapter 8</a></h3>
+                              <h3 class="introduction_text"><a href="#C8">Food 8</a></h3>
                               <p class="lorem_text">We are Rind Health Innovations</p>
                            </div>
                            <!--end--在style里面又个叫“my-image8”的style,来控制image 8的size-->
@@ -308,7 +379,7 @@
                               <div class="hover01 column">
                                  <figure><img src="images/img-9.png" class="my-image9"></figure>
                               </div>
-                              <h3 class="introduction_text"><a href="#C9">Chapter 9</a></h3>
+                              <h3 class="introduction_text"><a href="#C9">Food 9</a></h3>
                               <p class="lorem_text">We are Rind Health Innovations</p>
                            </div>
                            <!--end--在style里面又个叫“my-image9”的style,来控制image 9的size-->
@@ -343,18 +414,18 @@
 
 
       <div class="dropdown">
-         <button class="dropbtn">Jump to Chapter</button>
+         <button class="dropbtn">Jump to Foods</button>
 
             <div class="dropdown-content">
-               <a href="#C1">Chapter 1</a>
-               <a href="#C2">Chapter 2</a>
-               <a href="#C3">Chapter 3</a>
-               <a href="#C4">Chapter 4</a>
-               <a href="#C5">Chapter 5</a>
-               <a href="#C6">Chapter 6</a>
-               <a href="#C7">Chapter 7</a>
-               <a href="#C8">Chapter 8</a>
-               <a href="#C9">Chapter 9</a>
+               <a href="#C1">Food 1</a>
+               <a href="#C2">Food 2</a>
+               <a href="#C3">Food 3</a>
+               <a href="#C4">Food 4</a>
+               <a href="#C5">Food 5</a>
+               <a href="#C6">Food 6</a>
+               <a href="#C7">Food 7</a>
+               <a href="#C8">Food 8</a>
+               <a href="#C9">Food 9</a>
                
             </div>
       </div>
@@ -364,48 +435,48 @@
       <!--start--这个部分就是控制chapters部分格式的,上面有它的style.-->
       <div class="page-content">
          <div class="chapter">
-            <h2 id='C1'>Chapter 1</h2>
-            <p>This chapter explains ***</p>
+            <h2 id='C1'>Food 1</h2>
+            <p>This Food explains ***</p>
          </div>
 
          <div class="chapter">
-            <h2 id='C2'>Chapter 2</h2>
-            <p>This chapter explains ***</p>
+            <h2 id='C2'>Food 2</h2>
+            <p>This Food explains ***</p>
          </div>
 
          <div class="chapter">
-            <h2 id='C3'>Chapter 3</h2>
-            <p>This chapter explains ***</p>
+            <h2 id='C3'>Food 3</h2>
+            <p>This Food explains ***</p>
          </div>
 
          <div class="chapter">
-            <h2 id='C4'>Chapter 4</h2>
-            <p>This chapter explains ***</p>
+            <h2 id='C4'>Food 4</h2>
+            <p>This Food explains ***</p>
          </div>
 
          <div class="chapter">
-            <h2 id='C5'>Chapter 5</h2>
-            <p>This chapter explains ***</p>
+            <h2 id='C5'>Food 5</h2>
+            <p>This Food explains ***</p>
          </div>
 
          <div class="chapter">
-            <h2 id='C6'>Chapter 6</h2>
-            <p>This chapter explains ***</p>
+            <h2 id='C6'>Food 6</h2>
+            <p>This Food explains ***</p>
          </div>
 
          <div class="chapter">
-            <h2 id='C7'>Chapter 7</h2>
-            <p>This chapter explains ***</p>
+            <h2 id='C7'>Food 7</h2>
+            <p>This Food explains ***</p>
          </div>
 
          <div class="chapter">
-            <h2 id='C8'>Chapter 8</h2>
-            <p>This chapter explains ***</p>
+            <h2 id='C8'>Food 8</h2>
+            <p>This Food explains ***</p>
          </div>
 
          <div class="chapter">
-            <h2 id='C9'>Chapter 9</h2>
-            <p>This chapter explains ***</p>
+            <h2 id='C9'>Food 9</h2>
+            <p>This Food explains ***</p>
          </div>
       </div>
       <!--end--这个部分就是控制chapters部分格式的,上面有它的style.-->
@@ -618,7 +689,12 @@
         }
        });
       });
-</script>
+      </script>
 
-   </body>
+<!-- start--call “css/scripts.js”中的function 为了search bar-->
+<script src="css/scripts.js"></script>
+<!-- end--call “css/scripts.js”中的function 为了search bar-->
+   
+
+</body>
 </html>

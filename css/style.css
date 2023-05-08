@@ -1354,3 +1354,14 @@ figure:hover+span {
         opacity: 1;
     }
 /*end-- 这个是Project.html/Chapter Navigation/Biscuits(或者其他食物).那四个sections的style,就是sugar,slat,fat,calries. */    
+
+
+/* start-居中about 的人物介绍*/
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* set the height of the section to the full viewport height */
+  }
+  /* end-居中about 的人物介绍*/

@@ -1135,6 +1135,11 @@ figure:hover+span {
 .whitespace4 {
     height: 100px; /* Adjust this value to increase or decrease the whitespace */
 }
+
+/* 这个5是给fsai那个计算器的title和描述之间的距离style */
+.whitespace5 {
+    height: 50px; /* Adjust this value to increase or decrease the whitespace */
+}
 /* end-about.html 下面同理,在统一界面,给不同function之间加入一些space */
 
 

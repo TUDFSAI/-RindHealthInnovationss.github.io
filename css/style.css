@@ -224,7 +224,7 @@ button {
 
 
 .header_bg {
-    background: #c6cf19;
+    background: #c1c6c8;
     border-bottom: 1px solid #ffffff;
 }
 
@@ -239,7 +239,7 @@ button {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+    color: #00966c;
     font-size: 18px;
     text-transform: uppercase;
     padding: 10px 20px 10px 20px;
@@ -318,7 +318,7 @@ button {
 .about_section {
     width: 100%;
     float: left;
-    background-color: #fb6818;
+    background-color: #00966c;
     height: auto;
     background-size: 100%;
     margin-top: 100px;
